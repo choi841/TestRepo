@@ -9,10 +9,10 @@ from modules.handler import stream_handler, format_search_result
 from modules.tools import WebSearchTool
 
 # API KEY 정보로드
-load_dotenv()
+#load_dotenv()
 
 # 프로젝트 이름
-logging.langsmith("Perplexity")
+#logging.langsmith("Perplexity")
 
 st.title("Perplexity 💬")
 st.markdown(
