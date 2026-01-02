@@ -39,7 +39,7 @@ with st.sidebar:
     st.markdown("made by [@teddynote](https://youtube.com/c/teddynote)")
 
     # 모델 선택 메뉴
-    selected_model = st.selectbox("LLM 선택", ["gpt-4o", "gpt-4o-mini"], index=0)
+    selected_model = st.selectbox("LLM 선택", ["qwen3:4b", "gpt-4o-mini"], index=0)
 
     # 검색 결과 개수 설정
     search_result_count = st.slider("검색 결과", min_value=1, max_value=10, value=3)
