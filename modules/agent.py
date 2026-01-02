@@ -1,6 +1,7 @@
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import create_react_agent
+from langchain_ollama import ChatOllama, OllamaEmbedding
 
 
 def create_agent_executor(model_name="gpt-4o", tools=[]):
@@ -8,7 +9,7 @@ def create_agent_executor(model_name="gpt-4o", tools=[]):
     memory = MemorySaver()
 
     # 모델 설정
-    model = ChatOpenAI(model_name=model_name)
+    model = Chatollma(model_name=model_name)
 
     # 시스템 프롬프트 설정
     system_prompt = """You are an helpful AI Assitant like Perplexity. Your mission is to answer the user's question.
